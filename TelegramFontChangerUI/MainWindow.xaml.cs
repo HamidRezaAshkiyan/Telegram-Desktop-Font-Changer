@@ -1,28 +1,36 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Microsoft.Win32;
+using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using static System.Windows.Media.Fonts;
 
 namespace TelegramFontChangerUI
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow
     {
+        private ObservableCollection<string> Fonts { get; } = new ObservableCollection<string>(SystemFontFamilies.Select(x => x.Source).ToList());
+
         public MainWindow()
         {
             InitializeComponent();
+
+            DataContext = Fonts;
+        }
+
+
+        private void SystemFontCombobox_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var myKey = Registry.LocalMachine.OpenSubKey(
+                "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\FontSubstitutes", true);
+            var fontName = SystemFontCombobox.Text;
+
+            if ( myKey == null ) return;
+            myKey.SetValue("MS Shell Dlg 2", fontName, RegistryValueKind.String);
+            MessageBox.Show(myKey.GetValue("MS Shell Dlg 2").ToString());
+            myKey.Close();
+
+            
         }
     }
 }

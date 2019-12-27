@@ -6,4 +6,8 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="HandyControls" Version="2.4.4.1" />
+  </ItemGroup>
+
 </Project>
