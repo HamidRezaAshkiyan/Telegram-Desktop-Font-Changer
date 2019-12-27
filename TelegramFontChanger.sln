@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelegramFontChangerUI", "TelegramFontChangerUI\TelegramFontChangerUI.csproj", "{5C12F1F2-8609-4565-A930-658A2B168E13}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C12F1F2-8609-4565-A930-658A2B168E13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C12F1F2-8609-4565-A930-658A2B168E13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C12F1F2-8609-4565-A930-658A2B168E13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C12F1F2-8609-4565-A930-658A2B168E13}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1BEC96DC-EC37-4BD2-8F28-4677D1A04460}
+	EndGlobalSection
+EndGlobal
