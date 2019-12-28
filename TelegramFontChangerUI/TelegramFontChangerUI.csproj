@@ -2,12 +2,17 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWPF>true</UseWPF>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>TelegramFontChanger</AssemblyName>
+    <ApplicationIcon>Telegram.ico</ApplicationIcon>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PublishSingleFile>ture</PublishSingleFile>
+    <PublishTrimmed>true</PublishTrimmed>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="HandyControls" Version="2.4.4.1" />
+    <PackageReference Include="HandyControl" Version="2.3.0" />
   </ItemGroup>
 
 </Project>

@@ -38,11 +38,19 @@
             hc:InfoElement.Placeholder="Choose Font"
             hc:InfoElement.Title="System Fonts"
             hc:InfoElement.TitleAlignment="Left"
-            
             ItemsSource="{Binding IsAsync=True}"
             SelectionChanged="SystemFontCombobox_OnSelectionChanged"
             Style="{StaticResource ComboBoxExtend}" />
 
-
+        <TextBlock
+            Name="Result"
+            Grid.Row="2"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="20"
+            Foreground="Red"
+            Visibility="Hidden">
+            Result
+        </TextBlock>
     </Grid>
 </Window>
