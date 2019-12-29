@@ -27,11 +27,11 @@ namespace TelegramFontChangerUI
             {
                 var myKey = Registry.LocalMachine.OpenSubKey(
                     "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\FontSubstitutes", true);
-                var fontName = SystemFontCombobox.Text;
+                var fontName = SystemFontCombobox.SelectedValue.ToString();
 
                 if ( myKey == null ) return;
                 myKey.SetValue("MS Shell Dlg 2", fontName, RegistryValueKind.String);
-                MessageBox.Show(myKey.GetValue("MS Shell Dlg 2").ToString());
+                //MessageBox.Show(myKey.GetValue("MS Shell Dlg 2").ToString());
                 myKey.Close();
 
                 //Dialog.Show("Font Has Changed successfully");

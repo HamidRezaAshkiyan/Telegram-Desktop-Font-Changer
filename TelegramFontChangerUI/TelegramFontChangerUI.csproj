@@ -6,9 +6,7 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <AssemblyName>TelegramFontChanger</AssemblyName>
     <ApplicationIcon>Telegram.ico</ApplicationIcon>
-    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
-    <PublishSingleFile>ture</PublishSingleFile>
-    <PublishTrimmed>true</PublishTrimmed>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
 
   <ItemGroup>
