@@ -5,7 +5,7 @@
     <UseWPF>true</UseWPF>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <AssemblyName>TelegramFontChanger</AssemblyName>
-    <ApplicationIcon>Telegram.ico</ApplicationIcon>
+    <ApplicationIcon>TelegramFontChanger.ico</ApplicationIcon>
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
 
